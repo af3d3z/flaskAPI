@@ -1,64 +1,62 @@
-import pymssql
-import requests
 from flask import *
-
+import pymssql
 from models.Editorial import Editorial
 
+conn = pymssql.connect(
+    server='warmachine',
+    user='alebozek',
+    password='EjercicioAPI',
+    database='EjercicioAPI'
+)
 
 app = Flask(__name__)
 
-countries = [
-    {"id": 1, "name": "Thailand", "capital": "Bangkok", "area": 513120},
-    {"id": 2, "name": "Australia", "capital": "Canberra", "area": 763120},
-    {"id": 3, "name": "Egipt", "capital": "Cairo", "area": 1010408},
-]
-
 @app.route('/')
 def index():
-    return 'Hello world'
+    return 'Hello Flask!'
 
-@app.get('/countries')
-def get_countries():
-    return jsonify(countries)
+@app.get('/editoriales')
+def get_editoriales():
+    editoriales = []
+    cursor.execute("SELECT * FROM EDITORIAL")
+    results = cursor.fetchall()
+    for r in results:
+        editorial = Editorial(id=r['Id'], cif=r['CIF'], razon=r['RazonSocial'], direccion=r['Direccion'], web=r['Web'], correo=r['Correo'], tlf=r['Telefono'])
+        editoriales.append(editorial.serialize())
+    return jsonify(editoriales)
 
-@app.get('/countries/<int:id>')
-def get_country(id):
-    for country in countries:
-        if country['id'] == id:
-            return jsonify(country)
-
-@app.post('/countries')
-def add_country():
+@app.post('/editoriales')
+def add_editorial():
     if request.is_json:
-        country = request.get_json()
-        country['id'] = len(countries) + 1
-        countries.append(country)
-
-        return country, 201
+        editorial_json = request.get_json()
+        editorial = Editorial(id=editorial_json['id'], cif=editorial_json['cif'], razon=editorial_json['razon'], direccion=editorial_json['direccion'], web=editorial_json['web'], correo=editorial_json['correo'], tlf=editorial_json['tlf'])
+        print(f"INSERT INTO EDITORIAL VALUES ({editorial.id}, {editorial.cif}, {editorial.razon}, {editorial.direccion}, {editorial.web}, {editorial.correo}, {editorial.tlf})")
+        cursor.execute(f"INSERT INTO EDITORIAL VALUES ({editorial.id}, {editorial.cif}, '{editorial.razon}', '{editorial.direccion}', '{editorial.web}', '{editorial.correo}', '{editorial.tlf}')")
+        return '{"msg": "El recurso ha sido creado."}',201
     else:
-        return {"error": "Request must be JSON"}, 415
+        return '{error: "JSON invalido"}', 501
 
-
-@app.put('/countries/<int:id>')
-@app.patch('/countries/<int:id>')
-def modify_country(id):
+@app.put('/editoriales')
+@app.patch('/editoriales')
+def modify_editorial():
     if request.is_json:
-        new_country = request.get_json()
-        for country in countries:
-            if country['id'] == id:
-                for element in new_country:
-                    country[element] = new_country[element]
-                return new_country, 200
-    return {"error": "Request must be JSON"}, 415
-
-@app.delete('/countries/<int:id>')
-def delete_country(id):
-    for country in countries:
-        if country['id'] == id:
-            countries.remove(country)
-            return "{}", 200
-    return {"error": "Country not found"}, 404
-
+        editorial_json = request.get_json()
+        new_editorial = Editorial(id=editorial_json['id'], cif=editorial_json['cif'], razon=editorial_json['razon'], direccion=editorial_json['direccion'], web=editorial_json['web'], correo=editorial_json['correo'], tlf=editorial_json['tlf'])
+        print(new_editorial)
+        cursor.execute(f"SELECT COUNT(1) FROM EDITORIAL WHERE ID = {new_editorial.id}")
+        result = cursor.fetchall()[0][0]
+        print(result)
+        if result == 1:
+            return "bomba"
+        else:
+            return {"error": "La editorial no existe."}  
+    else:
+        return {"error": "JSON invalido"}
+        
+        
+        
+        
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    cursor = conn.cursor()
+    app.run(debug=True, host="0.0.0.0", port="5050")
