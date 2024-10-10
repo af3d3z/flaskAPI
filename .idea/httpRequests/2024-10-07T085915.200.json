@@ -1,0 +1,20 @@
+[
+  {
+    "area": 513120,
+    "capital": "Bangkok",
+    "id": 1,
+    "name": "Thailand"
+  },
+  {
+    "area": 763120,
+    "capital": "Canberra",
+    "id": 2,
+    "name": "Australia"
+  },
+  {
+    "area": 1010408,
+    "capital": "Cairo",
+    "id": 3,
+    "name": "Egipt"
+  }
+]
