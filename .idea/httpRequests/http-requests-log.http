@@ -1,3 +1,205 @@
+DELETE http://localhost:5050/libros/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T135603.200.json
+
+###
+
+DELETE http://localhost:5050/libros/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T135547.500.html
+
+###
+
+DELETE http://localhost:5050/editoriales/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T135450.200.json
+
+###
+
+PUT http://localhost:5050/libros/1
+Content-Type: application/json
+Content-Length: 175
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "id": 1,
+    "id_editorial": 1,
+    "isbn": "978-7-2398-8924-8",
+    "numpag": 345,
+    "precio": 15,
+    "tematica": "Tecnología",
+    "titulo": "Black Hat Python"
+  }
+
+<> 2024-10-12T135353.200.json
+
+###
+
+PUT http://localhost:5050/editoriales/1
+Content-Type: application/json
+Content-Length: 151
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "cif": 123456789,
+  "correo": "info@josefabooks.com",
+  "id": 1,
+  "razon": "JosefaBooks",
+  "tlf": 688641357,
+  "web": "https://josefabooks.com"
+}
+
+<> 2024-10-12T135313.200.json
+
+###
+
+POST http://localhost:5050/libros
+Content-Type: application/json
+Content-Length: 170
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "id_editorial": 3,
+  "isbn": "978-0-7280-2742-8",
+  "numpag": 261,
+  "precio": 25,
+  "tematica": "Cultura",
+  "titulo": "La leyenda del cacahuete mojado"
+}
+
+<> 2024-10-12T134958.201.json
+
+###
+
+POST http://localhost:5050/editoriales
+Content-Type: application/json
+Content-Length: 182
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "cif": 623793618,
+  "razon": "B Books",
+  "tlf": 966851375,
+  "web": "https://bbooks.com",
+  "correo": "info@bbooks.com",
+  "direccion": "C Patatas 34 Madrid, Spain"
+}
+
+<> 2024-10-12T134643.201.json
+
+###
+
+POST http://localhost:5050/editoriales
+Content-Type: application/json
+Content-Length: 151
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "cif": 623793618,
+  "razon": "B Books",
+  "tlf": 966851375,
+  "web": "https://bbooks.com",
+  "direccion": "C Patatas 34 Madrid, Spain"
+}
+
+<> 2024-10-12T134626.500.html
+
+###
+
+POST http://localhost:5050/editoriales
+Content-Type: application/json
+Content-Length: 106
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "cif": 623793618,
+  "razon": "B Books",
+  "tlf": 966851375,
+  "web": "https://bbooks.com"
+}
+
+<> 2024-10-12T134550.500.html
+
+###
+
+GET http://localhost:5050/libros/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T134308.200.json
+
+###
+
+GET http://localhost:5050/editoriales/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T134206.200.json
+
+###
+
+GET http://localhost:5050/libros
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T134023.200.json
+
+###
+
+GET http://localhost:5050/editoriales
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T133907.200.json
+
+###
+
+GET http://localhost:5050
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-12T133635.200.html
+
+###
+
 DELETE http://localhost:5050/editoriales/1
 User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
 Accept-Encoding: br, deflate, gzip, x-gzip

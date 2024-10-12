@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "id_editorial": 1,
+    "isbn": "978-7-2398-8924-8",
+    "numpag": 345,
+    "precio": 15,
+    "tematica": "Tecnología",
+    "titulo": "Black Hat Go"
+  },
+  {
+    "id": 2,
+    "id_editorial": 2,
+    "isbn": "968-3-2338-6783-0",
+    "numpag": 234,
+    "precio": 20,
+    "tematica": "Tecnología",
+    "titulo": "Python deep learning"
+  }
+]
