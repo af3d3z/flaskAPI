@@ -1,3 +1,343 @@
+POST http://localhost:5050/users/login
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T100452.200.json
+
+###
+
+POST http://localhost:5050/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "morilla",
+  "password": "trpleEme"
+}
+
+<> 2024-10-21T100436.401.json
+
+###
+
+POST http://localhost:5050/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "morilla",
+  "password": "trpleEme"
+}
+
+<> 2024-10-21T100422.500.html
+
+###
+
+GET http://localhost:5050/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyOTQ5NTUwMSwianRpIjoiYmJlMzE5OTAtN2NlYi00YzY4LWJlNzgtNzFmZjYxMjFjYTFkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hbm9sbyIsIm5iZiI6MTcyOTQ5NTUwMSwiZXhwIjoxNzI5NDk2NDAxfQ
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-21T093501.500.html
+
+###
+
+GET http://localhost:5050/users/
+Content-Type: application/json
+Authorization: Bearer $auth.token("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyOTQ5NTUwMSwianRpIjoiYmJlMzE5OTAtN2NlYi00YzY4LWJlNzgtNzFmZjYxMjFjYTFkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hbm9sbyIsIm5iZiI6MTcyOTQ5NTUwMSwiZXhwIjoxNzI5NDk2NDAxfQ")
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-21T093450.500.html
+
+###
+
+GET http://localhost:5050/users/
+Content-Type: application/json
+Authorization: Bearer {$auth.token("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyOTQ5NTUwMSwianRpIjoiYmJlMzE5OTAtN2NlYi00YzY4LWJlNzgtNzFmZjYxMjFjYTFkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hbm9sbyIsIm5iZiI6MTcyOTQ5NTUwMSwiZXhwIjoxNzI5NDk2NDAxfQ")}
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-21T093418.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T092501.201.json
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T092303.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T092137.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T092123.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091857.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091813.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091701.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091638.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091554.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091400.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091318.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T091106.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T090412.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T090353.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T090330.500.html
+
+###
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "manolo",
+  "password": "meudeus"
+}
+
+<> 2024-10-21T090144.401.json
+
+###
+
 DELETE http://localhost:5050/libros/1
 User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -458,263 +798,6 @@ Accept: */*
 }
 
 <> 2024-10-10T124239.405.html
-
-###
-
-PUT http://localhost:5050/editoriales/3
-Content-Type: application/json
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La puta",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T124211.405.html
-
-###
-
-POST http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 166
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La parca",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T124200.201.json
-
-###
-
-PUT http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La puta",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T123811.500.html
-
-###
-
-PUT http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La puta",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T123629.500.html
-
-###
-
-PUT http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La puta",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T123533.500.html
-
-###
-
-PUT http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La puta",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T123212.500.html
-
-###
-
-GET http://localhost:5050/editoriales
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T122738.200.json
-
-###
-
-GET http://localhost:5050/editoriales/
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T122730.404.html
-
-###
-
-GET http://localhost:5050/editoriales/1
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T122725.200.json
-
-###
-
-POST http://localhost:5050/editoriales
-Content-Type: application/json
-Content-Length: 166
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-"id": 3,
-"cif": 111111111,
-"razon": "La parca",
-"direccion": "C Patata 32",
-"web": "https://laparcabooks.com",
-"correo": "info@laparcabooks.com",
-"tlf": 622681386
-}
-
-<> 2024-10-10T122704.201.json
-
-###
-
-GET http://localhost:5050/editoriales/1
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121853.200.json
-
-###
-
-GET http://localhost:5050/editoriales/0
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121847.200.json
-
-###
-
-GET http://localhost:5050/editoriales/0
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121751.200.json
-
-###
-
-GET http://localhost:5050/editoriales/1
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121737.200.json
-
-###
-
-GET http://localhost:5050/editoriales/1
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121722.500.html
-
-###
-
-GET http://localhost:5050/editoriales
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-10T121436.200.json
-
-###
-
-GET http://localhost:5000/countries/3
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-07T090239.200.json
-
-###
-
-GET http://localhost:5000/countries
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-10-07T085915.200.json
 
 ###
 
