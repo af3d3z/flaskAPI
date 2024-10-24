@@ -6,7 +6,7 @@ from app.libros.routes import libros_bp
 from app.users.routes import users_bp
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'tu_clave'
+app.config['SECRET_KEY'] = 'D1dY0uKN0wTh-4tTh3-r3sAtnn3lUnd3rOc34nB0ul3v4rd'
 jwt = JWTManager(app)
 
 @app.get('/')
