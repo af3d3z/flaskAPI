@@ -10,7 +10,6 @@ ficheroUsers = "app/users/data.json"
 
 users_bp = Blueprint('users_bp', __name__)
 
-@jwt_required()
 @users_bp.post('/login')
 def login_users():
     users = leer_fichero(ficheroUsers)
@@ -20,7 +19,7 @@ def login_users():
         password = user['password'].encode('utf-8')
 
         for u in users:
-            if user['username'] == username:
+            if u['username'] == username:
                 passFile = u['password']
                 if bcrypt.checkpw(password, bytes.fromhex(passFile)):
                     token = create_access_token(identity=username)

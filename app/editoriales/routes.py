@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request
-
+from flask_jwt_extended import jwt_required
+from app.libros.routes import ficheroLibros
 from datos import leer_fichero, escribir_fichero
 from models.Editorial import Editorial
 
@@ -20,12 +21,22 @@ def get_editorial(id):
 
     return jsonify({'error': 'not found'})
 
-"""
-@editoriales_bp.get('/<int:id>/editoriales')
-def get_editoriales_libros():
-"""
+
+@editoriales_bp.get('/<int:id>/libros')
+def get_editoriales_libros(id):
+    lista = []
+    libros = leer_fichero(ficheroLibros)
+    for libro in libros:
+        if libro['id'] == id:
+            lista.append(libro)
+    if len(lista) > 0:
+        return lista, 200
+    else:
+        return {"error": "Esta editorial no tiene libros."}, 404
+
 
 @editoriales_bp.post('/')
+@jwt_required()
 def add_editorial():
     if request.is_json:
         editoriales = leer_fichero(ficheroEditoriales)
@@ -42,6 +53,7 @@ def add_editorial():
 
 @editoriales_bp.put('/<int:id>')
 @editoriales_bp.patch('/<int:id>')
+@jwt_required()
 def modify_editorial(id):
     if request.is_json:
         editorial_json = request.get_json()
@@ -62,6 +74,7 @@ def modify_editorial(id):
         return {"error": "Invalid JSON"}, 400
 
 @editoriales_bp.delete('/<int:id>')
+@jwt_required()
 def delete_editorial(id):
     editoriales = leer_fichero(ficheroEditoriales)
     for editorial in editoriales:
