@@ -14,4 +14,4 @@ class Editorial:
         
     def serialize(self):
         return {"id": self.id, "cif": self.cif, "razon": self.razon, "direccion": self.direccion, "web": self.web, 
-                "correo": self.correo, "telefono": self.tlf}
+                "correo": self.correo, "tlf": self.tlf}
